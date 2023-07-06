@@ -10,7 +10,11 @@ export default function Home() {
       </Head>
 
       {/* Banner */}
-      <Banner />
+      <Banner 
+        title="Clifford the red dog"
+        subTitle="a very cute dog"
+        imgUrl="/static/banner.jpg"
+      />
     </div>
   )
 }
