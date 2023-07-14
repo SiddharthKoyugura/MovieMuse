@@ -1,58 +1,58 @@
+/* Tailwind classes */
 .container {
-    @apply w-full h-[80vh] relative;
+  @apply w-full h-[80vh] relative;
 }
 .leftWrapper {
-    @apply absolute w-full h-full z-10;
+  @apply absolute w-full h-full z-10;
 }
 .left {
-    @apply flex justify-start pl-16 pr-16 h-full flex-col mt-24 md:w-2/5 ;
+  @apply flex justify-start pl-16 pr-16 h-full flex-col mt-24 md:w-2/5;
 }
 .nseriesWrapper {
-    @apply flex;
+  @apply flex;
 }
 .firstLetter {
-    @apply text-6xl text-red-700 font-extrabold;
+  @apply text-6xl text-red-700 font-extrabold;
 }
 .series {
-    @apply text-sm text-gray-600 self-center;
+  @apply text-sm text-gray-600 self-center;
 }
 .title {
-    @apply text-2xl font-extrabold text-white lg:text-6xl;
+  @apply text-2xl font-extrabold text-white lg:text-6xl;
 }
 .subTitle {
-    @apply text-lg text-white lg:text-2xl;
+  @apply text-lg text-white lg:text-2xl;
 }
 .playBtnWrapper {
-    @apply flex flex-row w-full;
+  @apply flex flex-row w-full;
 }
 .playText {
-    @apply text-[#1F2937] text-lg font-semibold pl-1 text-center;
+  @apply text-[#1F2937] text-lg font-semibold pl-1 text-center;
 }
 .bannerImg {
-    @apply w-full h-full absolute bg-cover bottom-0;
+  @apply w-full h-full absolute bg-cover bottom-0;
 }
 .btnWithIcon {
-    @apply flex items-center justify-center px-5 mt-5 py-2 rounded-lg w-32;
+  @apply flex items-center justify-center px-5 mt-5 py-2 rounded-lg w-32;
 }
-  
-  .title {
-    -webkit-text-stroke: 2px var(--black); /* width and color */
-  }
-  
-  .subTitle {
-    -webkit-text-stroke: 1px gray; /* width and color */
-  }
-  .bannerImg {
-    --tw-gradient-stops: var(--tw-gradient-from),
-      var(--tw-gradient-to, rgba(0, 0, 0, 0));
-    background-image: linear-gradient(to top, var(--tw-gradient-stops));
-  
-    --tw-gradient-from: var(--black);
-    background-position: "50% 50%";
-  }
-  
-  .btnWithIcon {
-    background-color: var(--white10);
-  }
-  
- 
+
+/* Custom classes */
+.title {
+  -webkit-text-stroke: 2px var(--black); /* width and color */
+}
+
+.subTitle {
+  -webkit-text-stroke: 1px gray; /* width and color */
+}
+.bannerImg {
+  --tw-gradient-stops: var(--tw-gradient-from),
+    var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+
+  --tw-gradient-from: var(--black);
+  background-position: "50% 50%";
+}
+
+.btnWithIcon {
+  background-color: var(--white10);
+}

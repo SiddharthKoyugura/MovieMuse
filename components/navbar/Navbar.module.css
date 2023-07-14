@@ -1,0 +1,75 @@
+/* Tailwind classes */
+.container {
+  @apply fixed top-0 w-full z-50;
+}
+.wrapper {
+    @apply flex p-5 md:px-16 md:flex-row md:items-center;
+}
+.logoLink {
+    @apply flex font-medium text-base items-center mb-4 md:mb-0;
+}
+.logoWrapper {
+    @apply w-32;
+}
+.navItems {
+    @apply flex flex-row w-1/2 ml-6 text-base leading-5 list-none md:ml-12;
+}
+.navItem {
+    @apply font-semibold text-base cursor-pointer mr-3 md:mr-5;
+}
+.navItem2 {
+    @apply cursor-pointer;
+}
+.navContainer {
+    @apply flex items-start ml-auto;
+}
+.usernameBtn {
+    @apply flex items-center overflow-hidden;
+}
+.username {
+    @apply text-base;
+}
+.navDropdown {
+    @apply absolute ml-auto mt-2 py-2 pr-2 border rounded; 
+}
+.linkName {
+    @apply block px-2 text-base leading-5 rounded cursor-pointer hover:underline;
+}
+.lineWrapper {
+    @apply py-2;
+}
+
+
+/* Custom classes */
+.container {
+  color: var(--white10);
+  background-image: linear-gradient(to bottom, var(--gradient-stops));
+  --gradient-from: var(--black);
+  --gradient-stops: var(--gradient-from), var(--gradient-to, rgba(0, 0, 0, 0));
+}
+
+.logoLink {
+  color: var(--white10);
+}
+
+.logoWrapper {
+  color: var(--red);
+}
+
+.usernameBtn {
+  color: var(--white);
+}
+
+.navDropdown {
+  background-color: var(--black50);
+  color: var(--white);
+  border-color: var(--blue);
+  box-shadow: var(--shadow30, 0 0 #0000), var(--ring-shadow, 0 0 #0000),
+    var(--shadow30);
+}
+
+.linkName {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
