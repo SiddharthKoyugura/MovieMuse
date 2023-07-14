@@ -1,0 +1,15 @@
+.smItem {
+  @apply relative w-[300px] min-w-[300px] h-[170px] min-h-[170px];
+}
+.mdItem {
+  @apply relative w-[158px] min-w-[158px] h-[280px] min-h-[280px];
+}
+.lgItem {
+  @apply relative w-[218px] min-w-[218px] h-[434px] min-h-[434px];
+}
+.container {
+  @apply mr-1 cursor-pointer;
+}
+.cardImg {
+  @apply top-0 right-0 bottom-0 left-0 rounded-md object-cover object-center block max-w-full;
+}
