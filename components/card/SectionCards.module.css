@@ -1,0 +1,25 @@
+.container {
+    @apply px-4 md:px-16;
+    color: var(--blue20);
+    background-color: --var(--black50);
+}
+.title {
+    @apply text-[2rem] font-bold;
+    color: var(--white10);
+}
+.cardWrapper {
+    @apply flex pt-7 pb-6 mt-6 mr-3 overflow-x-scroll overflow-y-hidden;
+}
+.wrap {
+    @apply flex-wrap;
+}
+.mb3 {
+    @apply mb-12;
+}
+.mb2 {
+    @apply mb-8;
+}
+.cardImg:hover {
+    @apply z-50;
+}
+  

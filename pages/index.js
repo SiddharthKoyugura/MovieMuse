@@ -1,28 +1,53 @@
 import Banner from "@/components/banner/Banner";
-import Card from "@/components/card/Card";
+import SectionCards from "@/components/card/SectionCards";
 import Navbar from "@/components/navbar/Navbar";
 import Head from "next/head";
-
+import styles from "@/styles/Home.module.css";
 
 export default function Home() {
+  const disneyVideos = [
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+    {
+      imgUrl: "/static/banner.jpg",
+    },
+  ];
   return (
     <div>
       <Head>
-        <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+        <title>
+          Netflix India – Watch TV Shows Online, Watch Movies Online
+        </title>
       </Head>
 
       <Navbar userName="Siddharth" />
 
-      <Banner 
+      <Banner
         title="Clifford the red dog"
         subTitle="a very cute dog"
         imgUrl="/static/banner.jpg"
       />
 
-      <Card imgUrl='/static/banner.jpg' size='large' />
-      <Card imgUrl='/static/banner.jpg' size='medium' />
-      <Card imgUrl='/static/banner.jpg' size='small' />
-
+      <div className={styles.sectionWrapper}>
+        <SectionCards title="Disney" size="large" videos={disneyVideos} />
+        <SectionCards title="Disney" size="medium" videos={disneyVideos} />
+      </div>
     </div>
-  )
+  );
 }
