@@ -3,31 +3,10 @@ import SectionCards from "@/components/card/SectionCards";
 import Navbar from "@/components/navbar/Navbar";
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
+import { getVideos } from "@/lib/videos";
 
 export default function Home() {
-  const disneyVideos = [
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-    {
-      imgUrl: "/static/banner.jpg",
-    },
-  ];
+  const disneyVideos = getVideos();
   return (
     <div>
       <Head>
