@@ -1,3 +1,7 @@
 .sectionWrapper {
     @apply mt-6;
 }
+
+.main {
+    @apply pb-16;
+}
